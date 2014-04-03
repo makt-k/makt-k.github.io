@@ -85,12 +85,13 @@ h3 {
 
 footer {
   text-align: center;
-  background-color: rgba(255, 69, 0, .6);
+  background-color: #F5F5F5;
   font-family: 'Karla', sans-serif;
+  opacity: .75;
 }
 
 footer p {
-  color: #F5F5F5;
+  color: #FF4500;
 }
 
 .big-pic{
