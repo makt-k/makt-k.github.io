@@ -85,9 +85,8 @@ h3 {
 
 footer {
   text-align: center;
-  background-color: #FF4500;
+  background-color: rgba(255, 69, 0, .6);
   font-family: 'Karla', sans-serif;
-  opacity: .65px;
 }
 
 footer p {
