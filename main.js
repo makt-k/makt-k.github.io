@@ -1,26 +1,8 @@
-$(document).ready(function() {
-  $('#frontpage').click(Portfolio.to_home)
-  $('#about').click(Portfolio.to_about);
-  $('#work').click(Portfolio.to_work);
+$(document).ready(function(){
+  $("a.nav-link").click(function(e){
+    e.preventDefault();
+    var clickID = $(this).attr("href");
+    $("body").animate({scrollTop: $(clickID).offset().top}, 2000);
+    return false;
+  });
 });
-
-var Portfolio = Portfolio || {}
-
-Portfolio.to_home = function()  {
-  $.get("/index.html", function(data) {
-    $("body").html(data);
-  });
-};
-
-Portfolio.to_about = function()  {
-  $.get("/html/about.html", function(data) {
-    $("#content").html(data);
-  });
-};
-
-Portfolio.to_work = function() {
-  $.get("/html/projects.html", function(data) {
-    $("#content").html(data);
-  });
-};
-

@@ -1,23 +1,33 @@
 #content {
   text-align: center;
-  height: 400px;
-  font-family: 'Port Lligat Sans', sans-serif;
+  height: 800px;
+  width: 100%;
+  font-family: 'Karla', sans-serif;
+  background-color: rgba(220, 220, 220, .5);
+}
+
+#projects {
+  text-align: center;
+  height: 800px;
+  width: 100%;
+  font-family: 'Karla', sans-serif;
+  background-color: rgba(0, 0, 0, .75);
 }
 
 .navbar  {
   list-style: none;
   text-align: center;
-  background-color: white;
+  background-color: #F5F5F5;
   min-height: 30px;
-  border-bottom-color: tomato;
+  opacity: 0.75;
 }
 
-.navbar span {
+.navbar span a{
   display: inline;
-  font-size: 1.5em;
-  font-family: 'Port Lligat Sans', sans-serif;
+  font-size: 1em;
+  font-family: 'Karla', sans-serif;
   text-decoration: none;
-  color: black;
+  color: #FF4500;
   padding: 0px 20px 0px 20px;
 }
 
@@ -31,49 +41,102 @@
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2em;
+  color: #F5F5F5;
+  text-align: center;
 }
 
 .sym {
-  font-size: 7em;
-}
-
-.sym2{
-  font-size: 2em;
-  font-family: 'Port Lligat Sans', sans-serif;
+  font-size: 3em;
+  text-align: center;
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 h3 {
-  font-size: 3em;
+  font-size: 1.5em;
+  color: gainsboro;
+  text-align: center;
 }
 
 .me {
-  font-size: 1em;
-  text-align: left;
-  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
 }
 
-.tech {
-  color: tomato;
+#skills{
+  list-style: none;
 }
 
-#email {
+#skills {
+  color: #FF4500;
+}
+
+.email {
   text-decoration: none;
-  color: tomato;
-  font-family: 'Lato', sans-serif;
+  color: #FF4500;
+  font-family: 'Karla', sans-serif;
+  text-align: left;
 }
 
 footer {
   text-align: right;
-  background-color: tomato;
-  font-family: 'Port Lligat Sans', sans-serif;
+  background-color: #FF4500;
+  font-family: 'Karla', sans-serif;
 }
 
 footer p {
   padding-right: 20px;
-  color: black;
+  color: #F5F5F5;
+}
+
+.big-pic{
+  background:url(/images/1.png) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  height: 800px;
+  width: 100%;
+}
+
+#about-me{
+  background-color: rgba(240, 248, 255, .5);
+}
+
+.my-projects{
+  color: #FF4500;
+  font-size: 1.50em;
+}
+
+.source {
+  color: #FF4500;
+  font-size: .8em;
+}
+
+.big-pic2{
+  background:url(/images/2.png) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  height: 550px;
+  width: 100%;
+}
+
+.contact li{
+  list-style: none;
+  display: inline;
+  padding: 7px;
+  text-align: left;
+}
+
+.contact li a{
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.contact li a:hover{
+  text-decoration: none;
+  text-transform:uppercase;
 }

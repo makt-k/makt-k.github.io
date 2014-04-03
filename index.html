@@ -5,37 +5,103 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Port+Lligat+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Karla:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="navbar">
-      <span><a href="https://linkedin.com/in/maktk" target="_blank"><img src="images/linkedin.png" alt="linkedin-logo"></a></span>
-      <span><a href="https://github.com/makt-k" target="_blank"><img src="images/github.png" alt="github-logo"></a></span>
-      <span id="frontpage">home</span>
-      <span id="about">about</span>
-      <span id="work">projects</span>
-      <span><a href="https://twitter.com/makt_k" target="_blank"><img src="images/twitter.png" alt="twitter-logo"></a></span>
-      <span><a href="http://3rds.tumblr.com" target="_blank"><img src="images/tumblr.png" alt="tumblr-logo"></a></span>
+  <section id="home" class="big-pic">
+    <div class="navbar navbar-fixed-top">
+      <span><a href="#content" data-target="content" class="nav-link">about</a></span>
+      <span><a href="#projects" data-target="projects" class="nav-link">projects</a></span>
+      <span><a href="#contact" data-target="contact" class="nav-link">contact</a></span>
     </div>
-    <div class="container">
-      <div id="content">
-        <div class="col-sm-5">
-          <h1>KAREN MAK</h1>
-        </div>
-        <div class="col-sm-7">
-          <h3>web developer</h3>
-          <h3 class="sym">&&</h3>
-          <h3>project manager</h3>
-          <h3 class="sym">&&</h3>
-          <h3>material anthropologist</h3>
+    <div class="col-xs-4">
+    </div>
+    <div class="col-xs-4">
+    </div>
+      <div class="col-xs-4">
+        <br>
+        <h1>KAREN MAK</h1>
+        <h3>web developer</h3>
+        <h3 class="sym">&&</h3>
+        <h3>project manager</h3>
+        <h3 class="sym">&&</h3>
+        <h3>material anthropologist</h3>
+    </div>
+  </section>
+    <section id="content">
+      <div class="container">
+        <div id="about-me">
+          <br>
+          <h2>Hello!</h2>
+
+          <p class="me">I am a newly-minted fullstack developer with project and office management experience in the antiques industry, and I hope to bridge the divide between the cultural and tech sectors with my new technical skills and prior experience in project and client management.</p>
+
+          <p class="me">My current skills includes:
+            <ul id="skills">
+              <li>Ruby on Rails</li>
+              <li>Javascript</li>
+              <li>JQuery</li>
+              <li>PostgresSQL</li>
+              <li>HTML5/CSS3</li>
+              <li>TDD (RSpec, Capybara, Jasmine)</li>
+              <li>Git</li>
+            </ul>
+          </p>
+
+           <p class="me">I am an avid traveler and coffee drinker with an unabashed love of food, photography, and making new memories.</p><br>
         </div>
       </div>
-    </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <br>
+        <br>
+        <p class="my-projects">My projects to date have been focused on cultivating positive paradigm shifts and behavioral changes in how we interact with the material world around us.</p>
+
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3">
+            <a href="karmaforge.herokuapp.com" class="thumbnail">
+              <img src="images/project2.png" alt="project2">
+            </a>
+            <a href="https://github.com/jordpo/karmaforge"><p class="source">(source code)</p></a>
+          </div>
+          <div class="col-sm-3">
+            <a href="gastropangs.herokuapp.com" class="thumbnail">
+              <img src="images/project3.png" alt="project3">
+            </a>
+            <a href="https://github.com/makt-k/gastropangs"><p class="source">(source code)</p></a>
+          </div>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <a href="mthropology.herokuapp.com" class="thumbnail">
+              <img src="images/project1.png" alt="project1">
+            </a>
+            <a href="https://github.com/makt-k/Project1/tree/master/mthropology"><p class="source">(source code)</p></a>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="big-pic2">
+      <div class="container">
+        <br>
+        <h3 class="email">Care to talk? How about a coffee?</h3>
+        <ul class="contact">
+          <li><a href="https://linkedin.com/in/maktk" target="_blank">Linkedin</a></li>
+          <li><a href="https://github.com/makt-k" target="_blank">Github</a></li>
+          <li><a href="https://twitter.com/makt_k" target="_blank">Twitter</a></li>
+          <li><a href="mailto:karen.mak@stx.oxon.org" target="_top" class="email">Email</a></li>
+        </ul>
+      </div>
+    </section>
     <footer>
       <p>&copy; mak 2014</p>
     </footer>
   </body>
 </html>
+
+
