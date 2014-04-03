@@ -8,7 +8,7 @@
 
 #projects {
   text-align: center;
-  height: 800px;
+  height: 1000px;
   width: 100%;
   font-family: 'Karla', sans-serif;
   background-color: rgba(0, 0, 0, .75);
@@ -120,7 +120,7 @@ footer p {
   background:url(/images/2.png) no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
-  height: 550px;
+  height: 800px;
   width: 100%;
 }
 
