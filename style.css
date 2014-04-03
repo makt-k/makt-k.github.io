@@ -87,6 +87,7 @@ footer {
   text-align: center;
   background-color: #FF4500;
   font-family: 'Karla', sans-serif;
+  opacity: .65px;
 }
 
 footer p {
