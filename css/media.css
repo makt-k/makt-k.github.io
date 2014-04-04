@@ -19,7 +19,7 @@
   .big-pic{
     background:url(/images/1crop.png) no-repeat center center fixed;
     width: 100%;
-    background-size:100% auto
+    background-size: auto 100%;
   }
 
 
@@ -57,7 +57,7 @@
   .big-pic2{
     background:url(/images/2crop.png) no-repeat center center fixed;
     width: 100%;
-    background-size:100% auto;
+    background-size:auto 100%;
   }
 
   .contact li a:hover{
