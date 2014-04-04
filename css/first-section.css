@@ -16,7 +16,7 @@ h3 {
 }
 
 .big-pic{
-  background:url(/images/1.png) no-repeat center center fixed;
+  background:url(/images/1small.png) no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   height: 800px;
