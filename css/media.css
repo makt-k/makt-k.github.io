@@ -16,6 +16,14 @@
     text-align: center;
   }
 
+  .big-pic{
+    background:url(/images/1crop.png) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    width: 100%;
+  }
+
+
   h2 {
     font-size: 1.25em;
     font-weight: bold;
@@ -48,7 +56,9 @@
   }
 
   .big-pic2{
-    height: 500px;
+    background:url(/images/2crop.png) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
     width: 100%;
   }
 
