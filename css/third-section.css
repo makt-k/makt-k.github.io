@@ -1,0 +1,17 @@
+#projects {
+  text-align: center;
+  height: 1000px;
+  width: 100%;
+  font-family: 'Karla', sans-serif;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.my-projects{
+  color: #FF4500;
+  font-size: 1.5em;
+}
+
+.source {
+  color: #FF4500;
+  font-size: .8em;
+}

@@ -1,0 +1,29 @@
+.big-pic2{
+  background:url(/images/2.png) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+.contact li{
+  list-style: none;
+  display: inline;
+  padding: 7px;
+  text-align: left;
+}
+
+.contact li a{
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.contact li a:hover{
+  text-decoration: none;
+  text-transform:uppercase;
+}
+
+.email {
+  color:#FF4500;
+  text-align: left;
+}

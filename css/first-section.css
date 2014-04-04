@@ -1,0 +1,24 @@
+h1 {
+  font-size: 2em;
+  color: #F5F5F5;
+  text-align: center;
+}
+
+.sym {
+  font-size: 3em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: gainsboro;
+  text-align: center;
+}
+
+.big-pic{
+  background:url(/images/1.png) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  height: 800px;
+  width: 100%;
+}

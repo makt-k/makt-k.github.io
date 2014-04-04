@@ -1,0 +1,61 @@
+@media (max-device-width: 450px){
+  h1 {
+  font-size: 1.25em;
+  color: #F5F5F5;
+  text-align: center;
+  }
+
+  .sym {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1em;
+    color: gainsboro;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+
+  .me {
+    font-size: 1em;
+    text-align: left;
+    font-family: 'Karla', sans-serif;
+  }
+
+  #content {
+    text-align: left;
+    height: 600px;
+  }
+
+  .my-projects{
+    color: #FF4500;
+    font-size: 1.25em;
+  }
+
+  .source {
+    color: #FF4500;
+    font-size: .75em;
+  }
+
+  #projects {
+    height: 600px;
+    width: 100%;
+  }
+
+  .big-pic2{
+    height: 500px;
+    width: 100%;
+  }
+
+  .contact li a:hover{
+    text-decoration: none;
+    color:#FF4500;
+    text-transform: none;
+  }
+
+}
