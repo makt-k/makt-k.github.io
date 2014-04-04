@@ -19,6 +19,8 @@ h3 {
   background:url(/images/1small.png) no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   height: 800px;
   width: 100%;
 }
