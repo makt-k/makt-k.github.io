@@ -17,8 +17,7 @@
   }
 
   .big-pic{
-    background-image:url(/images/1crop.png) no-repeat center center fixed;
-    width: 100%;
+    background-image:url(/images/1crop.png) no-repeat center center fixed !important;
     background-size: auto 100%;
     -webkit-background-size: auto 100%;
     -moz-background-size: auto 100%;
@@ -58,8 +57,7 @@
   }
 
   .big-pic2{
-    background-image:url(/images/2crop.png) no-repeat center center fixed;
-    width: 100%;
+    background-image:url(/images/2crop.png) no-repeat center center fixed !important;
     background-size: auto 100%;
     -webkit-background-size: auto 100%;
     -moz-background-size: auto 100%;
