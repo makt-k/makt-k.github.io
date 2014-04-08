@@ -1,18 +1,18 @@
 @media (max-device-width: 450px){
   h1 {
-  font-size: 1.25em;
-  color: #F5F5F5;
+  font-size: 2.75em;
+  color: tomato;
   text-align: center;
   }
 
   .sym {
-    font-size: 1.5em;
+    font-size: 1.75em;
     text-align: center;
   }
 
   h3 {
-    font-size: 1em;
-    color: gainsboro;
+    font-size: 2em;
+    color: #F5F5F5;
     text-align: center;
   }
 
@@ -64,6 +64,11 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     width: 100%;
+  }
+
+  .contact li a {
+    font-size: 1.5em;
+    display: block;
   }
 
   .contact li a:hover{
