@@ -17,11 +17,12 @@
   }
 
   .big-pic{
-    background-color: steelblue;
-    background-size: auto 100%;
-    -webkit-background-size: auto 100%;
-    -moz-background-size: auto 100%;
-    -o-background-size: auto 100%;
+    background:url('/images/1crop.png');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
   }
 
 
@@ -57,11 +58,12 @@
   }
 
   .big-pic2{
-    background-color:lemonchiffon;
-    background-size: auto 100%;
-    -webkit-background-size: auto 100%;
-    -moz-background-size: auto 100%;
-    -o-background-size: auto 100%;
+    background:url('/images/2crop.png');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
   }
 
   .contact li a:hover{

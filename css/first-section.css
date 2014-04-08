@@ -23,5 +23,6 @@ h3 {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 800px;
+  max-height: 50%;
   width: 100%;
 }

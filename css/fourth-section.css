@@ -5,6 +5,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 600px;
+  max-height: 50%;
   width: 100%;
 }
 
