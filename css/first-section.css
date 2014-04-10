@@ -1,20 +1,25 @@
 h1 {
   font-size: 2.5em;
   color: tomato;
-  text-align: center;
+  text-align: right;
 }
 
 .sym {
   font-size: 3em;
-  text-align: center;
+  text-align: right;
   color:#F5F5F5;
 }
 
 h3 {
   font-size: 1.5em;
   color: #F5F5F5;
-  text-align: center;
+  text-align: right;
 }
+
+#intro{
+  text-align: right;
+}
+
 
 .big-pic{
   background:url(/images/1small.png) no-repeat center center fixed;

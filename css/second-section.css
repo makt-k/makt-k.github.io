@@ -14,14 +14,17 @@ h2 {
 .me {
   font-size: 1.5em;
   font-family: 'Karla', sans-serif;
+  text-align: center;
 }
 
-#skills{
+.skills{
   list-style: none;
+  color: #FF4500;
 }
 
-#skills {
-  color: #FF4500;
+.skills span {
+  color:black;
+  text-decoration: underline;
 }
 
 #about-me{
