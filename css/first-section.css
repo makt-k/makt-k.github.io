@@ -1,19 +1,23 @@
 h1 {
-  font-size: 2.5em;
+  font-size: 4em;
   color: tomato;
+  font-weight: bold;
   text-align: right;
+  font-family: 'Comic Neue Angular', sans-serif;
 }
 
 .sym {
-  font-size: 3em;
+  font-size: 3.5em;
   text-align: right;
   color:#F5F5F5;
+  font-family: 'Comic Neue Angular', sans-serif;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.75em;
   color: #F5F5F5;
   text-align: right;
+  font-family: 'Karla', sans-serif;
 }
 
 #intro{

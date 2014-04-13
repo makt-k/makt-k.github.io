@@ -29,3 +29,12 @@ footer {
 footer p {
   color: #FF4500;
 }
+
+@font-face {
+  font-family: 'Comic Neue Angular';
+  src: url('../fonts/ComicNeue-Angular-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ComicNeue-Angular-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ComicNeue-Angular-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/ComicNeue-Angular-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 700;
+}
