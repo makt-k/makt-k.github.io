@@ -13,6 +13,4 @@ $(document).ready(function(){
       function() {
         $(this).animate({opacity: 0.5}, 1000);
   });
-
-
 });
