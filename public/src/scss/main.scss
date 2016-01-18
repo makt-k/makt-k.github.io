@@ -1,0 +1,94 @@
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300,800);
+@import "bootstrap";
+
+body {
+
+  .fa-bars{
+    &:hover {
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      z-index: 50;
+      cursor: pointer;
+    }
+  }
+  .intro-text {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    padding: 2em;
+    line-height: 1.50em;
+  }
+
+  .social-media {
+    margin-top: 1em;
+    list-style-type:  none;
+    li {
+      display: inline;
+      padding-left: 1.5em;
+    &:hover {
+      cursor: pointer;
+    }
+    }
+  }
+
+  .footer {
+    bottom: 0;
+    width: 100%;
+  }
+
+  .top-border {
+    border-top: 1px solid #F4D3A7;
+  }
+
+  .gold-box {
+    border: 1px solid #F4D3A7;
+    padding: 0 .2em;
+    display: inline-block;
+    margin: .1em 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+}
+
+@media (min-width: $screen-xs-min) {
+  .header {
+    padding-top: 10px;
+  }
+  .intro-text {
+    font-size: 2em;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-xs-max) {
+  .header {
+    padding-top: 20%;
+  }
+  .intro-text {
+    font-size: 2em;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-sm-max) {
+  .header {
+    padding-top: 20%;
+  }
+  .intro-text {
+    font-size: 4em;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-md-max) {
+  .header {
+    padding-top: 20%;
+  }
+
+  .intro-text {
+    font-size: 4em;
+  }
+}
