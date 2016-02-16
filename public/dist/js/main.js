@@ -3,11 +3,11 @@ var $ = require('jquery');
 var underscore = require('underscore');
 
 
-$( document ).ready(function() {
+$( document ).ready(function(){
+  $('.gold-box').fadeIn(3000, function(){
 
-  $('.intro-text').slideDown( 600 );
-
-});
+  })
+})
 
 },{"jquery":2,"underscore":3}],2:[function(require,module,exports){
 /*!

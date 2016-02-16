@@ -2,6 +2,14 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300,800);
 @import "bootstrap";
 
+@mixin fa-2x {
+  font-size: 2em;
+}
+
+@mixin fa-4x {
+  font-size: 4em;
+}
+
 body {
 
   .fa-bars{
@@ -12,28 +20,33 @@ body {
       cursor: pointer;
     }
   }
+
   .intro-text {
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: bold;
-    padding: 2em;
+    padding: 0 1em;
+    margin: 1em 0;
     line-height: 1.50em;
   }
 
   .social-media {
     margin-top: 1em;
     list-style-type:  none;
+    padding-left: 0;
+    margin-right: 2em;
     li {
       display: inline;
       padding-left: 1.5em;
-    &:hover {
-      cursor: pointer;
+      -webkit-transition: color 1s;
+      -moz-transition:    color 1s;
+      -ms-transition:     color 1s;
+      -o-transition:      color 1s;
+      transition:         color 1s;
+      &:hover {
+        cursor: pointer;
+        color: #F4D3A7;
+      }
     }
-    }
-  }
-
-  .footer {
-    bottom: 0;
-    width: 100%;
   }
 
   .top-border {
@@ -41,10 +54,8 @@ body {
   }
 
   .gold-box {
-    border: 1px solid #F4D3A7;
-    padding: 0 .2em;
-    display: inline-block;
-    margin: .1em 0;
+    color: #F4D3A7;
+    display: none;
   }
 
   .hidden {
@@ -54,41 +65,73 @@ body {
 }
 
 @media (min-width: $screen-xs-min) {
+  .introduction {
+    border-top: solid 4px #000000;
+    border-bottom: solid 4px #000000;
+    margin: 1em 1em 3em 1em;
+  }
   .header {
     padding-top: 10px;
   }
   .intro-text {
     font-size: 2em;
   }
+  .fa-bars {
+    @include fa-2x;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-xs-max) {
+  .introduction {
+    border-top: solid 6px #000000;
+    border-bottom: solid 6px #000000;
+    margin: 2em 1em 3em 1em;
+  }
   .header {
-    padding-top: 20%;
+    padding-top: 10px;
   }
   .intro-text {
     font-size: 2em;
+  }
+  .fa-bars {
+    @include fa-2x;
   }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-sm-max) {
+  .introduction {
+    border-top: solid 8px #000000;
+    border-bottom: solid 8px #000000;
+    margin: 4em 1em 3em 1em;
+  }
   .header {
     padding-top: 20%;
   }
   .intro-text {
-    font-size: 4em;
+    font-size: 3em;
+  }
+  .fa-bars {
+    @include fa-4x;
   }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-md-max) {
+  .introduction {
+    border-top: solid 10px #000000;
+    border-bottom: solid 10px #000000;
+    margin: 6em 1em 3em 1em;
+  }
   .header {
     padding-top: 20%;
   }
-
   .intro-text {
     font-size: 4em;
+  }
+  .fa-bars {
+    margin-top: 1em;
+    @include fa-4x;
   }
 }

@@ -5827,57 +5827,85 @@ body .fa-bars:hover {
 body .intro-text {
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: bold;
-  padding: 2em;
+  padding: 0 1em;
+  margin: 1em 0;
   line-height: 1.50em; }
 
 body .social-media {
   margin-top: 1em;
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 0;
+  margin-right: 2em; }
   body .social-media li {
     display: inline;
-    padding-left: 1.5em; }
+    padding-left: 1.5em;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s; }
     body .social-media li:hover {
-      cursor: pointer; }
-
-body .footer {
-  bottom: 0;
-  width: 100%; }
+      cursor: pointer;
+      color: #F4D3A7; }
 
 body .top-border {
   border-top: 1px solid #F4D3A7; }
 
 body .gold-box {
-  border: 1px solid #F4D3A7;
-  padding: 0 .2em;
-  display: inline-block;
-  margin: .1em 0; }
+  color: #F4D3A7;
+  display: none; }
 
 body .hidden {
   display: none; }
 
 @media (min-width: 480px) {
+  .introduction {
+    border-top: solid 4px #000000;
+    border-bottom: solid 4px #000000;
+    margin: 1em 1em 3em 1em; }
   .header {
     padding-top: 10px; }
   .intro-text {
+    font-size: 2em; }
+  .fa-bars {
     font-size: 2em; } }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 767px) {
+  .introduction {
+    border-top: solid 6px #000000;
+    border-bottom: solid 6px #000000;
+    margin: 2em 1em 3em 1em; }
   .header {
-    padding-top: 20%; }
+    padding-top: 10px; }
   .intro-text {
+    font-size: 2em; }
+  .fa-bars {
     font-size: 2em; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 991px) {
+  .introduction {
+    border-top: solid 8px #000000;
+    border-bottom: solid 8px #000000;
+    margin: 4em 1em 3em 1em; }
   .header {
     padding-top: 20%; }
   .intro-text {
+    font-size: 3em; }
+  .fa-bars {
     font-size: 4em; } }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1199px) {
+  .introduction {
+    border-top: solid 10px #000000;
+    border-bottom: solid 10px #000000;
+    margin: 6em 1em 3em 1em; }
   .header {
     padding-top: 20%; }
   .intro-text {
+    font-size: 4em; }
+  .fa-bars {
+    margin-top: 1em;
     font-size: 4em; } }
