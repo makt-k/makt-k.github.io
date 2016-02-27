@@ -10,6 +10,8 @@
   font-size: 4em;
 }
 
+$menu-width: 250px;
+
 body {
 
   .fa-bars{
@@ -55,13 +57,79 @@ body {
 
   .gold-box {
     color: #F4D3A7;
-    display: none;
+    -webkit-animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -ms-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    animation: fadein 3s;
   }
 
   .hidden {
     display: none;
   }
 
+  .menu {
+    display:block;
+    div {
+        position:absolute;
+        z-index:2;
+        top:0;
+        width: $menu-width;
+        height:100%;
+        .border-box {
+          transform: (transform ease 250ms);
+        }
+        &.left {
+            background:#273D7A;
+            left:$menu-width*-1;
+        }
+
+        &.visible.left {
+            transform: (translate3d($menu-width, 0, 0));
+        }
+
+        .menu-item {
+            float:left;
+            width:100%;
+            margin:0;
+            padding:10px 15px;
+            border-bottom:solid 1px #555;
+            cursor:pointer;
+            .border-box {
+              color:#B0B0B0;
+            }
+            &:hover {
+                color:#F0F0F0;
+            }
+        }
+    }
+}
+
+}
+
+@keyframes fadein {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@-o-keyframes fadein {
+  from { opacity: 0 }
+  to { opacity: 1 }
 }
 
 @media (min-width: $screen-xs-min) {

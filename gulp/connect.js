@@ -5,7 +5,7 @@ module.exports = function () {
 
   return connect.server({
     root: './public/dist',
-    port: 8009,
+    port: 7013,
     host: 'localhost',
     livereload: true
   });
