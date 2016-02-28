@@ -5818,11 +5818,38 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+body a {
+  text-decoration: none; }
+  body a:hover {
+    text-decoration: none; }
+
+body .fa:hover {
+  cursor: pointer; }
+
 body .fa-bars:hover {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
-  z-index: 50;
-  cursor: pointer; }
+  z-index: 50; }
+
+body .fa-times {
+  color: #F4D3A7; }
+  body .fa-times:hover {
+    transform: rotate(25deg);
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s; }
+
+body .fa-home, body .fa-desktop {
+  color: #F4D3A7; }
+  body .fa-home:hover, body .fa-desktop:hover {
+    color: #ffffff; }
+
+body #closeModalDiv {
+  position: fixed;
+  bottom: 200px;
+  right: 200px; }
 
 body .intro-text {
   font-family: 'Merriweather Sans', sans-serif;
@@ -5861,33 +5888,6 @@ body .gold-box {
 
 body .hidden {
   display: none; }
-
-body .menu {
-  display: block; }
-  body .menu div {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    width: 250px;
-    height: 100%; }
-    body .menu div .border-box {
-      transform: transform ease 250ms; }
-    body .menu div.left {
-      background: #273D7A;
-      left: -250px; }
-    body .menu div.visible.left {
-      transform: translate3d(250px, 0, 0); }
-    body .menu div .menu-item {
-      float: left;
-      width: 100%;
-      margin: 0;
-      padding: 10px 15px;
-      border-bottom: solid 1px #555;
-      cursor: pointer; }
-      body .menu div .menu-item .border-box {
-        color: #B0B0B0; }
-      body .menu div .menu-item:hover {
-        color: #F0F0F0; }
 
 @keyframes fadein {
   from {
@@ -5928,7 +5928,7 @@ body .menu {
     padding-top: 10px; }
   .intro-text {
     font-size: 2em; }
-  .fa-bars {
+  .fa-bars, .fa-times {
     font-size: 2em; } }
 
 /* Small devices (tablets, 768px and up) */
@@ -5941,7 +5941,7 @@ body .menu {
     padding-top: 10px; }
   .intro-text {
     font-size: 2em; }
-  .fa-bars {
+  .fa-bars, .fa-times {
     font-size: 2em; } }
 
 /* Medium devices (desktops, 992px and up) */
@@ -5954,7 +5954,7 @@ body .menu {
     padding-top: 20%; }
   .intro-text {
     font-size: 3em; }
-  .fa-bars {
+  .fa-bars, .fa-times {
     font-size: 4em; } }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -5967,6 +5967,6 @@ body .menu {
     padding-top: 20%; }
   .intro-text {
     font-size: 4em; }
-  .fa-bars {
+  .fa-bars, .fa-times {
     margin-top: 1em;
     font-size: 4em; } }

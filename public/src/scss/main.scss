@@ -11,16 +11,53 @@
 }
 
 $menu-width: 250px;
+$gold-color: #F4D3A7;
+$black-color: #000000;
+$white-color: #ffffff;
 
 body {
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
-  .fa-bars{
+  .fa:hover {
+    cursor: pointer;
+  }
+
+  .fa-bars {
     &:hover {
       transform: rotate(90deg);
       -webkit-transform: rotate(90deg);
       z-index: 50;
-      cursor: pointer;
     }
+  }
+
+  .fa-times {
+    color: $gold-color;
+    &:hover {
+      transform: rotate(25deg);
+      -webkit-transition: color 1s;
+      -moz-transition:    color 1s;
+      -ms-transition:     color 1s;
+      -o-transition:      color 1s;
+      transition:         color 1s;
+    }
+  }
+
+  .fa-home, .fa-desktop {
+    color: $gold-color;
+    &:hover {
+      color: $white-color;
+    }
+  }
+
+  #closeModalDiv {
+    position: fixed;
+    bottom: 200px;
+    right: 200px;
   }
 
   .intro-text {
@@ -46,17 +83,17 @@ body {
       transition:         color 1s;
       &:hover {
         cursor: pointer;
-        color: #F4D3A7;
+        color: $gold-color;
       }
     }
   }
 
   .top-border {
-    border-top: 1px solid #F4D3A7;
+    border-top: 1px solid $gold-color;
   }
 
   .gold-box {
-    color: #F4D3A7;
+    color: $gold-color;
     -webkit-animation: fadein 3s;
     -moz-animation: fadein 3s;
     -ms-animation: fadein 3s;
@@ -67,44 +104,6 @@ body {
   .hidden {
     display: none;
   }
-
-  .menu {
-    display:block;
-    div {
-        position:absolute;
-        z-index:2;
-        top:0;
-        width: $menu-width;
-        height:100%;
-        .border-box {
-          transform: (transform ease 250ms);
-        }
-        &.left {
-            background:#273D7A;
-            left:$menu-width*-1;
-        }
-
-        &.visible.left {
-            transform: (translate3d($menu-width, 0, 0));
-        }
-
-        .menu-item {
-            float:left;
-            width:100%;
-            margin:0;
-            padding:10px 15px;
-            border-bottom:solid 1px #555;
-            cursor:pointer;
-            .border-box {
-              color:#B0B0B0;
-            }
-            &:hover {
-                color:#F0F0F0;
-            }
-        }
-    }
-}
-
 }
 
 @keyframes fadein {
@@ -134,8 +133,8 @@ body {
 
 @media (min-width: $screen-xs-min) {
   .introduction {
-    border-top: solid 4px #000000;
-    border-bottom: solid 4px #000000;
+    border-top: solid 4px $black-color;
+    border-bottom: solid 4px $black-color;
     margin: 1em 1em 3em 1em;
   }
   .header {
@@ -144,7 +143,7 @@ body {
   .intro-text {
     font-size: 2em;
   }
-  .fa-bars {
+  .fa-bars, .fa-times {
     @include fa-2x;
   }
 }
@@ -152,8 +151,8 @@ body {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-xs-max) {
   .introduction {
-    border-top: solid 6px #000000;
-    border-bottom: solid 6px #000000;
+    border-top: solid 6px $black-color;
+    border-bottom: solid 6px $black-color;
     margin: 2em 1em 3em 1em;
   }
   .header {
@@ -162,7 +161,7 @@ body {
   .intro-text {
     font-size: 2em;
   }
-  .fa-bars {
+  .fa-bars, .fa-times {
     @include fa-2x;
   }
 }
@@ -170,8 +169,8 @@ body {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-sm-max) {
   .introduction {
-    border-top: solid 8px #000000;
-    border-bottom: solid 8px #000000;
+    border-top: solid 8px $black-color;
+    border-bottom: solid 8px $black-color;
     margin: 4em 1em 3em 1em;
   }
   .header {
@@ -180,7 +179,7 @@ body {
   .intro-text {
     font-size: 3em;
   }
-  .fa-bars {
+  .fa-bars, .fa-times {
     @include fa-4x;
   }
 }
@@ -188,8 +187,8 @@ body {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-md-max) {
   .introduction {
-    border-top: solid 10px #000000;
-    border-bottom: solid 10px #000000;
+    border-top: solid 10px $black-color;
+    border-bottom: solid 10px $black-color;
     margin: 6em 1em 3em 1em;
   }
   .header {
@@ -198,7 +197,7 @@ body {
   .intro-text {
     font-size: 4em;
   }
-  .fa-bars {
+  .fa-bars, .fa-times {
     margin-top: 1em;
     @include fa-4x;
   }

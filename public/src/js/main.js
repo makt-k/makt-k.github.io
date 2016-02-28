@@ -1,10 +1,19 @@
 import React from 'react';
 import { ReactDOM, render } from 'react-dom';
 import { Router, Route, Link, IndexRoute, hashHistory } from 'react-router';
+import Modal from 'react-modal';
 
 const App = React.createClass({
-  openModal(){
-   this.refs.left.show();
+  getInitialState() {
+    return { modalIsOpen: false };
+  },
+
+  openModal() {
+    this.setState({ modalIsOpen: true });
+  },
+
+  closeModal() {
+    this.setState({ modalIsOpen: false });
   },
 
   render(){
@@ -12,48 +21,38 @@ const App = React.createClass({
       <div className="row">
         <div className="header text-center col-xs-3 col-sm-2 col-md-1">
           <i className="fa fa-bars" onClick={this.openModal}></i>
+          <Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal} style={customStyles}>
+            <Link to="/" onClick={this.closeModal}><h1><i className="fa fa-home fa-5x"></i></h1></Link>
+            <Link to="projects" onClick={this.closeModal}><h1><i className="fa fa-desktop fa-5x"></i></h1></Link>
+            <div id="closeModalDiv"><i className="fa fa-times" onClick={this.closeModal}></i></div>
+          </Modal>
         </div>
           {this.props.children}
       </div>
-      <Menu ref="left" alignment="left">
-        <MenuItem><Link to="projects">Projects</Link></MenuItem>
-      </Menu>
-
     </div>
     )
   }
 })
 
-let Menu = React.createClass({
-  getInitialState() {
-    return {
-      visible: false
-    }
+const customStyles = {
+  content : {
+    position                   : 'absolute',
+    top                        : '125px',
+    left                       : '100px',
+    right                      : '100px',
+    bottom                     : '125px',
+    backgroundColor            :'rgba(0, 0, 0, .75)',
+    border                     : 'none',
   },
-
-  show(){
-    this.setState({ visible: true })
-    document.addEventListener('click')
+  overlay : {
+    position          : 'fixed',
+    top               : 0,
+    left              : 0,
+    right             : 0,
+    bottom            : 0,
+    backgroundColor   :'rgba(255, 255, 255, .75)'
   },
-
-  hide(){
-    document.removeEventListener('click')
-    this.setState({ visible: false })
-  },
-
-  render(){
-    return <div className="menu">
-        <div className={ ( this.state.visible ? 'visible' : '' ) + this.props.alignment }> { this.props.children } </div>
-      </div>
-  }
-
-})
-
-let MenuItem = React.createClass({
-  render(){
-    return <div className="menu-item">{this.props.children}</div>
-  }
-})
+};
 
 const Museum = React.createClass({
   render(){
